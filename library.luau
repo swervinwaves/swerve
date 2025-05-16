@@ -26,6 +26,11 @@ local Library = {
 local windowFrame
 
 -- helper funcs
+function Library:IsLoaded(): boolean
+	return Library.Loaded
+end
+
+-- clone
 function Library.Utils.Clone<orig>(obj: any & orig): orig
 	local Type = typeof(obj)
 
